@@ -1,0 +1,36 @@
+body {
+    background-color: chartreuse;
+    color: white; /* Sudah diperbaiki menjadi titik dua */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.kotak-mesin {
+    background-color: antiquewhite;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: cadetblue;
+    color: brown;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#hasilSkill {
+    color: coral;
+    margin-top: 20px;
+}
