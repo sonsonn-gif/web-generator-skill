@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Generator Skill</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+ <body>
+    <div class="kotak-mesin">
+        <h1>Generator Skill Unik</h1>
+
+        <p>
+            Masukkan namamu untuk
+            melihat skill tersembunyi
+        </p>
+
+        <input
+        type="text"
+        id="namaInput"
+        placeholder="Ketik namamu...."
+        >
+
+        <button onclick="cekSkill()">
+            Cek Sekarang!
+        </button>
+
+        <h2 id="hasilSkill">
+            Skill belum terdeteksi...
+        </h2>
+        <img
+            id="fotoSkill"
+            src="https://placehold.co"
+            width="400"
+            >
+    </div>
+ <script>
+    function cekSkill(){
+        let nama=document.getElementById("namaInput").value;
+      let daftarSkill = [
+  "phoenix",
+  "dragon",
+  "leviathan",
+  "kraken",
+  "pegasus"
+];
+ let daftarGambar = [
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIbgiDlq4bK6EScvjkd1oo3MQZWli_tUF-VYCqPw1alQ&s=10",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUdfe6LxeEM4ChnqVjf9CHEFYUPRwr491A5jBXNLnfgw&s=10",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-E4xOJdUljXiT45kA1UCzq5kZD8NJ5gNh118tTvvkWQ&s=10",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNzRao1yIxpvTJ6fUqDwl22G9XmDsmWKJINyA_biQWiA&s=10",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdumvLbWGqVj13U4vdjEm4ybSn-y6SZfm0AeDB9Nc-kQ&s=10",
+];
+
+        
+        let acak=Math.floor(Math.random() *daftarSkill.length);
+        let skillPilihan=daftarSkill[acak];
+        let gambarPilihan=daftarGambar[acak];
+        document.getElementById("hasilSkill").innerText=
+        nama+",skill unikmu:"+skillPilihan;
+        document.getElementById("fotoSkill").src=gambarPilihan;
+    }
+ </script>
+ </body>   
+</html>
